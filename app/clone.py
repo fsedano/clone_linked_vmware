@@ -258,7 +258,7 @@ def main():
                     'ip': None
                 }
         else:
-            ip_data = {'ip': f'{10+x}.0.0.1', 'mask':'255.255.255.0', 'gateway': f'{10+x}.0.0.254'}
+            ip_data = {'ip': f'{10+x}.0.0.1', 'mask':'255.255.255.0', 'gateway': None}
         ip_address_spec.append(ip_data)
 
     customspec = _kustomize(vim.vm, args.vm_name, ip_address_spec)
