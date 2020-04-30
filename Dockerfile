@@ -11,4 +11,4 @@ WORKDIR /app
 RUN pip3 install -r requirements.txt
 RUN git clone https://github.com/vmware/pyvmomi-community-samples.git /pyvmomi-examples
 ENV PYTHONPATH="${PYTHONPATH}:/pyvmomi-examples/samples"
-
+CMD ["/bin/bash", "-c", "sleep 999999"]
